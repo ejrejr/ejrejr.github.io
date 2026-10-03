@@ -1,11 +1,161 @@
-<HTML>
-<HEAD>
-<TITLE>Placeholder</TITLE>
-</HEAD>
-<BODY>
-<P>
-Great things come to those who ask...
-</P>
-</BODY>
-</HTML>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekly Destiny 2 armor statistics for Hunter, Warlock, and Titan. Browse the latest Zavala and Xûr armor rolls or explore previous weeks.">
+  <title>Weekly Destiny 2 Armor Statistics</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { color-scheme: dark; }
+    body { margin: 0; padding: 32px; background: #101820; color: #e8eef3; font: 14px/1.7 system-ui, sans-serif; }
+    .page { max-width: 1100px; margin: 0 auto; }
+    header { border-bottom: 1px solid #45545e; margin-bottom: 24px; padding-bottom: 16px; }
+    h1 { font-size: 30px; line-height: 1.25; }
+    h2 { font-size: 20px; margin: 0 0 12px; }
+    h3 { font-size: 16px; }
+    p { color: #abbac5; }
+    a { color: #b9e8df; text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid #68c7b4; outline-offset: 4px; }
+    section { margin-bottom: 36px; }
+    .section-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+    .week-label { margin: 0 0 12px; }
+    .week-label time { color: #e8eef3; font-weight: 600; }
+    .weekly-nav ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
+    .weekly-nav li { text-align: center; padding: 14px 8px; background: #22313b; border: 1px solid #45545e; border-radius: 6px; }
+    .weekly-nav .class-link { font-size: 18px; font-weight: 600; }
+    .weekly-nav .json-link { font-size: 13px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; vertical-align: middle; border: 1px solid #36434b; padding: 12px; }
+    thead { background: #22313b; }
+    th:first-child { width: 180px; }
+    tbody th { font-weight: 500; }
+    #explanation { border-top: 1px solid #45545e; padding-top: 24px; }
+    #explanation p { max-width: 85ch; }
+    #explanation blockquote { margin: 0; }
+    .source { font-size: 13px; }
+    @media (max-width: 680px) {
+      body { padding: 20px 12px; }
+      h1 { font-size: 26px; }
+      th, td { padding: 10px; }
+      th:first-child { width: 105px; }
+      #historical .weekly-nav ul { grid-template-columns: 1fr; gap: 8px; }
+      #historical .weekly-nav li { padding: 8px; }
+    }
+    @media (max-width: 480px) {
+      #latest .weekly-nav ul { grid-template-columns: 1fr; }
+    }
+    @media print {
+      html { color-scheme: light; }
+      body { background: white; color: black; padding: 0; }
+      p, a, .week-label time { color: inherit; }
+      .section-links { display: none; }
+      .weekly-nav li, thead { background: transparent; }
+      th, td, .weekly-nav li { border-color: #aaa; }
+      tr { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Weekly Destiny 2 Armor Statistics</h1>
+      <p>Compare Zavala and Xûr armor stats across Ghost armor-focus mods for Hunter, Warlock, and Titan. Bookmark this page for the latest weekly HTML tables and matching JSON files, with earlier weeks collected below.</p>
+      <nav class="section-links" aria-label="Page sections">
+        <a href="#latest">Latest</a>
+        <a href="#historical">Historical</a>
+        <a href="#explanation">Explanation</a>
+      </nav>
+    </header>
+    <main>
+      <!-- WEEKLY MAINTENANCE:
+        1. Verify all three classes have matching HTML and JSON files in this directory.
+        2. Move the previous Latest week into a new first row of historical-weeks.
+           Copy an existing row, then update its date, navigation label, and six links.
+        3. Update Latest's date, navigation label, and six relative links.
+        4. Keep Historical newest first, without duplicating Latest.
+        5. Preserve the hand-edited Explanation section exactly.
+        Dates are the weekly anchor dates in the filenames, not publication dates.
+      -->
+      <!-- BEGIN LATEST: update this block each week -->
+      <section id="latest" aria-labelledby="latest-title">
+        <h2 id="latest-title">Latest</h2>
+        <p class="week-label">Week of <time datetime="2026-09-29">September 29, 2026</time></p>
+        <nav class="weekly-nav" aria-label="Armor files for week of 2026-09-29">
+          <ul>
+            <li><a class="class-link" href="2026-09-29-DestinyArmor-Hunter.html">Hunter</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-29-DestinyArmor-Hunter.json" aria-label="Hunter JSON for week of 2026-09-29">JSON</a></li>
+            <li><a class="class-link" href="2026-09-29-DestinyArmor-Warlock.html">Warlock</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-29-DestinyArmor-Warlock.json" aria-label="Warlock JSON for week of 2026-09-29">JSON</a></li>
+            <li><a class="class-link" href="2026-09-29-DestinyArmor-Titan.html">Titan</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-29-DestinyArmor-Titan.json" aria-label="Titan JSON for week of 2026-09-29">JSON</a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-- END LATEST -->
 
+      <section id="historical" aria-labelledby="historical-title">
+        <h2 id="historical-title">Historical</h2>
+        <table>
+          <thead><tr><th scope="col">Week of</th><th scope="col">Armor tables &amp; JSON</th></tr></thead>
+          <!-- BEGIN HISTORICAL: prepend the previous Latest week here -->
+          <tbody id="historical-weeks">
+          <!-- Week of 2026-09-22 -->
+          <tr>
+            <th scope="row"><time datetime="2026-09-22">September 22, 2026</time></th>
+            <td>
+              <nav class="weekly-nav" aria-label="Armor files for week of 2026-09-22">
+                <ul>
+                  <li><a class="class-link" href="2026-09-22-DestinyArmor-Hunter.html">Hunter</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-22-DestinyArmor-Hunter.json" aria-label="Hunter JSON for week of 2026-09-22">JSON</a></li>
+                  <li><a class="class-link" href="2026-09-22-DestinyArmor-Warlock.html">Warlock</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-22-DestinyArmor-Warlock.json" aria-label="Warlock JSON for week of 2026-09-22">JSON</a></li>
+                  <li><a class="class-link" href="2026-09-22-DestinyArmor-Titan.html">Titan</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-22-DestinyArmor-Titan.json" aria-label="Titan JSON for week of 2026-09-22">JSON</a></li>
+                </ul>
+              </nav>
+            </td>
+          </tr>
+          <!-- Week of 2026-09-15 -->
+          <tr>
+            <th scope="row"><time datetime="2026-09-15">September 15, 2026</time></th>
+            <td>
+              <nav class="weekly-nav" aria-label="Armor files for week of 2026-09-15">
+                <ul>
+                  <li><a class="class-link" href="2026-09-15-DestinyArmor-Hunter.html">Hunter</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-15-DestinyArmor-Hunter.json" aria-label="Hunter JSON for week of 2026-09-15">JSON</a></li>
+                  <li><a class="class-link" href="2026-09-15-DestinyArmor-Warlock.html">Warlock</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-15-DestinyArmor-Warlock.json" aria-label="Warlock JSON for week of 2026-09-15">JSON</a></li>
+                  <li><a class="class-link" href="2026-09-15-DestinyArmor-Titan.html">Titan</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-15-DestinyArmor-Titan.json" aria-label="Titan JSON for week of 2026-09-15">JSON</a></li>
+                </ul>
+              </nav>
+            </td>
+          </tr>
+          <!-- Week of 2026-09-08 -->
+          <tr>
+            <th scope="row"><time datetime="2026-09-08">September 8, 2026</time></th>
+            <td>
+              <nav class="weekly-nav" aria-label="Armor files for week of 2026-09-08">
+                <ul>
+                  <li><a class="class-link" href="2026-09-08-DestinyArmor-Hunter.html">Hunter</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-08-DestinyArmor-Hunter.json" aria-label="Hunter JSON for week of 2026-09-08">JSON</a></li>
+                  <li><a class="class-link" href="2026-09-08-DestinyArmor-Warlock.html">Warlock</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-08-DestinyArmor-Warlock.json" aria-label="Warlock JSON for week of 2026-09-08">JSON</a></li>
+                  <li><a class="class-link" href="2026-09-08-DestinyArmor-Titan.html">Titan</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-09-08-DestinyArmor-Titan.json" aria-label="Titan JSON for week of 2026-09-08">JSON</a></li>
+                </ul>
+              </nav>
+            </td>
+          </tr>
+          </tbody>
+          <!-- END HISTORICAL -->
+        </table>
+      </section>
+
+      <!-- BEGIN EXPLANATION: hand-edited content; do not change during weekly updates -->
+      <section id="explanation" aria-labelledby="explanation-title">
+        <h2 id="explanation-title">Explanation</h2>
+        <h3>The What and the Why Review</h3>
+        <blockquote cite="https://www.reddit.com/r/DestinyTheGame/comments/1wvzipb/20261002_weekend_armor_for_xur_and_zavala_all/">
+          <p>What is this? This should be all the armor stats for the different armor mods you can run on your ghost, organized by class, for Zavala’s weekly armor offerings (Luminopotent and Triumphal Anthem) and for Xur’s weekly armor offerings (either Bushido or Swordmaster and Exotic Armor). As you know, changing the armor mod on your ghost can affect the stats of armor you can acquire.</p>
+          <p>Note: all of this is viewing the armor as Tier 5. Your stats will vary if you’re not acquiring Tier 5 yet.</p>
+          <p>Why is this? Well, sometimes I’m hunting for the best role that I’m missing. And man is it a hassle to switch the ghost mod and then recheck to see what the stats are now trying to note which one is the best.</p>
+          <p>Why JSON? I provide the JSON for those that want to do deeper analysis. For instance, you could load the JSON into an LLM and have it do deeper searching or comparing, perhaps, against your DIM exported armor.csv - it gives you flexibility.</p>
+          <p>As always, I’m open to Reddit post feedback / corrections / concerns, etc, etc. Thanks for the feedback that have made this better and better! Cheers from just another guardian.</p>
+          <p>Bungie ID: <a href="https://www.bungie.net/7/en/User/Profile/1/4611686018432549838?bgn=RufusTheRuse">RufusTheRuse</a> -- Reddit r/DestinyTheGame posts: <a href="https://www.reddit.com/r/DestinyTheGame/search/?q=u%2FRufusTheRuse&type=posts&t=year&cId=d53580ff-4e29-4668-b68b-0405d2186bb4&iId=28e545fd-59bd-46d5-9838-4998bbf215d1">RufusTheRuse</a></p>
+        </blockquote>
+      </section>
+      <!-- END EXPLANATION -->
+    </main>
+  </div>
+</body>
+</html>
