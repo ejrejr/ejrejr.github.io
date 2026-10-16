@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Weekly Destiny 2 armor statistics for Hunter, Warlock, and Titan. Browse the latest Zavala and Xûr armor rolls or explore previous weeks.">
-  <title>Weekly Destiny 2 Armor Statistics</title>
+  <title>Xurvala — Weekly Destiny 2 Armor Statistics</title>
   <style>
     * { box-sizing: border-box; }
     html { color-scheme: dark; }
@@ -55,16 +55,17 @@
       tr { break-inside: avoid; }
     }
   </style>
+  <link rel="icon" href="/favicon.ico">
 </head>
 <body>
   <div class="page">
     <header>
-      <h1>Weekly Destiny 2 Armor Statistics</h1>
+      <h1>Xurvala — Weekly Destiny 2 Armor Statistics</h1>
       <p>Compare Zavala and Xûr armor stats across Ghost armor-focus mods for Hunter, Warlock, and Titan. Bookmark this page for the latest weekly HTML tables and matching JSON files, with earlier weeks collected below.</p>
       <nav class="section-links" aria-label="Page sections">
         <a href="#latest">Latest</a>
-        <a href="#historical">Historical</a>
         <a href="#explanation">Explanation</a>
+        <a href="#historical">Historical</a>
       </nav>
     </header>
     <main>
@@ -80,16 +81,31 @@
       <!-- BEGIN LATEST: update this block each week -->
       <section id="latest" aria-labelledby="latest-title">
         <h2 id="latest-title">Latest</h2>
-        <p class="week-label">Week of <time datetime="2026-10-06">October 6, 2026</time></p>
-        <nav class="weekly-nav" aria-label="Armor files for week of 2026-10-06">
+        <p class="week-label">Week of <time datetime="2026-10-13">October 13, 2026</time></p>
+        <nav class="weekly-nav" aria-label="Armor files for week of 2026-10-13">
           <ul>
-            <li><a class="class-link" href="2026-10-06-DestinyArmor-Hunter.html">Hunter</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-06-DestinyArmor-Hunter.json" aria-label="Hunter JSON for week of 2026-10-06">JSON</a></li>
-            <li><a class="class-link" href="2026-10-06-DestinyArmor-Warlock.html">Warlock</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-06-DestinyArmor-Warlock.json" aria-label="Warlock JSON for week of 2026-10-06">JSON</a></li>
-            <li><a class="class-link" href="2026-10-06-DestinyArmor-Titan.html">Titan</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-06-DestinyArmor-Titan.json" aria-label="Titan JSON for week of 2026-10-06">JSON</a></li>
+            <li><a class="class-link" href="2026-10-13-DestinyArmor-Hunter.html">Hunter</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-13-DestinyArmor-Hunter.json" aria-label="Hunter JSON for week of 2026-10-13">JSON</a></li>
+            <li><a class="class-link" href="2026-10-13-DestinyArmor-Warlock.html">Warlock</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-13-DestinyArmor-Warlock.json" aria-label="Warlock JSON for week of 2026-10-13">JSON</a></li>
+            <li><a class="class-link" href="2026-10-13-DestinyArmor-Titan.html">Titan</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-13-DestinyArmor-Titan.json" aria-label="Titan JSON for week of 2026-10-13">JSON</a></li>
           </ul>
         </nav>
       </section>
       <!-- END LATEST -->
+
+      <!-- BEGIN EXPLANATION: hand-edited content; do not change during weekly updates -->
+      <section id="explanation" aria-labelledby="explanation-title">
+        <h2 id="explanation-title">Explanation</h2>
+        <h3>The What and the Why Review</h3>
+        <blockquote cite="https://www.reddit.com/r/DestinyTheGame/comments/1wvzipb/20261002_weekend_armor_for_xur_and_zavala_all/">
+          <p>What is this? This should be all the armor stats for the different armor mods you can run on your ghost, organized by class, for Zavala’s weekly armor offerings (Luminopotent and Triumphal Anthem) and for Xur’s weekly armor offerings (either Bushido or Swordmaster and Exotic Armor). As you know, changing the armor mod on your ghost can affect the stats of armor you can acquire.</p>
+          <p>Note: all of this is viewing the armor as Tier 5. Your stats will vary if you’re not acquiring Tier 5 yet.</p>
+          <p>Why is this? Well, sometimes I’m hunting for the best roll that I’m missing. And man is it a hassle to switch the ghost mod and then recheck to see what the stats are now trying to note which one is the best.</p>
+          <p>Why JSON? I provide the JSON for those that want to do deeper analysis. For instance, you could load the JSON into an LLM and have it do deeper searching or comparing, perhaps, against your DIM exported armor.csv - it gives you flexibility.</p>
+          <p>As always, I’m open to Reddit post feedback / corrections / concerns, etc, etc. Thanks for the feedback that have made this better and better! Cheers from just another guardian.</p>
+          <p>Bungie ID: <a href="https://www.bungie.net/7/en/User/Profile/1/4611686018432549838?bgn=RufusTheRuse">RufusTheRuse</a> -- Reddit r/DestinyTheGame posts: <a href="https://www.reddit.com/r/DestinyTheGame/search/?q=u%2FRufusTheRuse&type=posts&t=year&cId=d53580ff-4e29-4668-b68b-0405d2186bb4&iId=28e545fd-59bd-46d5-9838-4998bbf215d1">RufusTheRuse</a></p>
+        </blockquote>
+      </section>
+      <!-- END EXPLANATION -->
 
       <section id="historical" aria-labelledby="historical-title">
         <h2 id="historical-title">Historical</h2>
@@ -97,6 +113,19 @@
           <thead><tr><th scope="col">Week of</th><th scope="col">Armor tables &amp; JSON</th></tr></thead>
           <!-- BEGIN HISTORICAL: prepend the previous Latest week here -->
           <tbody id="historical-weeks">
+          <!-- Week of 2026-10-06 -->
+          <tr>
+            <th scope="row"><time datetime="2026-10-06">October 6, 2026</time></th>
+            <td>
+              <nav class="weekly-nav" aria-label="Armor files for week of 2026-10-06">
+                <ul>
+                  <li><a class="class-link" href="2026-10-06-DestinyArmor-Hunter.html">Hunter</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-06-DestinyArmor-Hunter.json" aria-label="Hunter JSON for week of 2026-10-06">JSON</a></li>
+                  <li><a class="class-link" href="2026-10-06-DestinyArmor-Warlock.html">Warlock</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-06-DestinyArmor-Warlock.json" aria-label="Warlock JSON for week of 2026-10-06">JSON</a></li>
+                  <li><a class="class-link" href="2026-10-06-DestinyArmor-Titan.html">Titan</a><span aria-hidden="true"> · </span><a class="json-link" href="2026-10-06-DestinyArmor-Titan.json" aria-label="Titan JSON for week of 2026-10-06">JSON</a></li>
+                </ul>
+              </nav>
+            </td>
+          </tr>
           <!-- Week of 2026-09-29 -->
           <tr>
             <th scope="row"><time datetime="2026-09-29">September 29, 2026</time></th>
@@ -154,20 +183,7 @@
         </table>
       </section>
 
-      <!-- BEGIN EXPLANATION: hand-edited content; do not change during weekly updates -->
-      <section id="explanation" aria-labelledby="explanation-title">
-        <h2 id="explanation-title">Explanation</h2>
-        <h3>The What and the Why Review</h3>
-        <blockquote cite="https://www.reddit.com/r/DestinyTheGame/comments/1wvzipb/20261002_weekend_armor_for_xur_and_zavala_all/">
-          <p>What is this? This should be all the armor stats for the different armor mods you can run on your ghost, organized by class, for Zavala’s weekly armor offerings (Luminopotent and Triumphal Anthem) and for Xur’s weekly armor offerings (either Bushido or Swordmaster and Exotic Armor). As you know, changing the armor mod on your ghost can affect the stats of armor you can acquire.</p>
-          <p>Note: all of this is viewing the armor as Tier 5. Your stats will vary if you’re not acquiring Tier 5 yet.</p>
-          <p>Why is this? Well, sometimes I’m hunting for the best role that I’m missing. And man is it a hassle to switch the ghost mod and then recheck to see what the stats are now trying to note which one is the best.</p>
-          <p>Why JSON? I provide the JSON for those that want to do deeper analysis. For instance, you could load the JSON into an LLM and have it do deeper searching or comparing, perhaps, against your DIM exported armor.csv - it gives you flexibility.</p>
-          <p>As always, I’m open to Reddit post feedback / corrections / concerns, etc, etc. Thanks for the feedback that have made this better and better! Cheers from just another guardian.</p>
-          <p>Bungie ID: <a href="https://www.bungie.net/7/en/User/Profile/1/4611686018432549838?bgn=RufusTheRuse">RufusTheRuse</a> -- Reddit r/DestinyTheGame posts: <a href="https://www.reddit.com/r/DestinyTheGame/search/?q=u%2FRufusTheRuse&type=posts&t=year&cId=d53580ff-4e29-4668-b68b-0405d2186bb4&iId=28e545fd-59bd-46d5-9838-4998bbf215d1">RufusTheRuse</a></p>
-        </blockquote>
-      </section>
-      <!-- END EXPLANATION -->
+
     </main>
   </div>
 </body>
