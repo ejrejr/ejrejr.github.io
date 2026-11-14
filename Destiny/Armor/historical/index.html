@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Xurvala — Weekly Destiny 2 Armor Statistics</title>
   <meta name="description" content="Find the best weekend armor stats from Xûr and Zavala across Ghost armor-focus mods.">
+  <link rel="alternate" type="application/rss+xml" title="Weekly armor updates for all classes" href="https://ejrejr.github.io/Destiny/Armor/historical/rss.xml">
   <link rel="canonical" href="https://ejrejr.github.io/Destiny/Armor/historical/">
 
   <!-- Homepage discovery metadata: keep the canonical URL stable during weekly updates. -->
@@ -108,6 +109,8 @@
         3. Update Latest's date, navigation label, and six relative links.
         4. Keep Historical newest first, without duplicating Latest.
         5. Preserve the hand-edited Explanation section exactly.
+        6. Run scripts/update-weekly-rss.ps1 with the weekly anchor date.
+           Publish the four rss*.xml files alongside the reports (see WEB_README.md).
         Dates are the weekly anchor dates in the filenames, not publication dates.
       -->
       <!-- BEGIN LATEST: update this block each week -->
@@ -141,6 +144,7 @@
 
       <section id="historical" aria-labelledby="historical-title">
         <h2 id="historical-title">Historical</h2>
+        <p><a href="rss.xml">Subscribe via RSS for all future updates</a></p>
         <table>
           <thead><tr><th scope="col">Week of</th><th scope="col">Armor tables &amp; JSON</th></tr></thead>
           <!-- BEGIN HISTORICAL: prepend the previous Latest week here -->
