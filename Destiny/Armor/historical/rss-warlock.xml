@@ -7,6 +7,15 @@
     <language>en-us</language>
     <atom:link rel="self" type="application/rss+xml" href="https://ejrejr.github.io/Destiny/Armor/historical/rss-warlock.xml" xmlns:atom="http://www.w3.org/2005/Atom" />
     <item>
+      <title>Warlock armor rolls - Week of November 17, 2026</title>
+      <link>https://ejrejr.github.io/Destiny/Armor/historical/2026-11-17-DestinyArmor-Warlock.html</link>
+      <description>Compare Warlock armor rolls across Ghost armor-focus mods. Commander Zavala: Luminopotent, Triumphal Anthem. X&amp;#251;r: Bushido, Exotic Armor. &lt;a href="https://ejrejr.github.io/Destiny/Armor/historical/2026-11-17-DestinyArmor-Warlock.json"&gt;Download Warlock JSON&lt;/a&gt;.</description>
+      <category>Warlock</category>
+      <pubDate>Fri, 20 Nov 2026 17:14:51 GMT</pubDate>
+      <guid isPermaLink="true">https://ejrejr.github.io/Destiny/Armor/historical/2026-11-17-DestinyArmor-Warlock.html</guid>
+      <enclosure url="https://ejrejr.github.io/Destiny/Armor/historical/2026-11-17-DestinyArmor-Warlock.json" length="310981" type="application/json" />
+    </item>
+    <item>
       <title>Warlock armor rolls - Week of November 10, 2026</title>
       <link>https://ejrejr.github.io/Destiny/Armor/historical/2026-11-10-DestinyArmor-Warlock.html</link>
       <description>Compare Warlock armor rolls across Ghost armor-focus mods. Commander Zavala: Luminopotent, Triumphal Anthem. X&amp;#251;r: Swordmaster, Exotic Armor. &lt;a href="https://ejrejr.github.io/Destiny/Armor/historical/2026-11-10-DestinyArmor-Warlock.json"&gt;Download Warlock JSON&lt;/a&gt;.</description>
@@ -15,6 +24,6 @@
       <guid isPermaLink="true">https://ejrejr.github.io/Destiny/Armor/historical/2026-11-10-DestinyArmor-Warlock.html</guid>
       <enclosure url="https://ejrejr.github.io/Destiny/Armor/historical/2026-11-10-DestinyArmor-Warlock.json" length="324775" type="application/json" />
     </item>
-    <lastBuildDate>Sat, 14 Nov 2026 19:29:43 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 17:14:51 GMT</lastBuildDate>
   </channel>
 </rss>
